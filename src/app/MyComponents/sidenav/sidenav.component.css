@@ -1,0 +1,74 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+@import "~@fortawesome/fontawesome-free/css/all.css";
+  
+
+.first{
+    margin-bottom: 80px;
+}
+
+.cmp{
+    height: 10%;
+    width: 50%;
+    /* margin: auto; */
+    margin-left: 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 15px;
+    padding-left: 25px;
+    /* border: 2px solid black; */
+    background-color: rgb(114, 231, 231);
+}
+
+.cmp:hover{
+    cursor: pointer;
+}
+
+.active{
+    background-color: rgb(188, 176, 232);
+    width: 50%;
+}
+
+.second1{
+    display: none;
+}
+
+span{
+    font-size: 20px;
+}
+
+.compose {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+
+  .second div{
+    /* margin-left: 20px; */
+    padding-left: 20px;
+    border-radius: 10px;
+  }
+
+
+
+  .second div span{
+    margin-left: 8px;
+    font-size: 15px;
+  }
+
+  .second{
+    margin-top: -30px;
+  }
+
+  .second div:hover{
+    background-color: bisque;
+    border-radius: 10px;
+    width: 50%;
+  }

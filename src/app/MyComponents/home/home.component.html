@@ -1,0 +1,18 @@
+<div class="main">
+
+  <div class="top-nav">
+    <i class="fa-regular fa-square" style="margin-left: 5px;"></i>
+    <i class="fa-solid fa-rotate-right"></i>
+    <i class="fa-solid fa-ellipsis-vertical"></i>
+    <!-- <div>1 of 5200</div> -->
+  </div>
+
+  <div class="first">
+    <app-secondarynav></app-secondarynav>
+  </div>
+    <div *ngFor="let item of items;index as i" class="second">
+      <app-mail [item]="item" (itemDelete)="deleteItem($event)"></app-mail>
+    </div>
+    
+
+</div>

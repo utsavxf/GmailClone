@@ -1,0 +1,78 @@
+<div class="main">
+    <div class="first">
+       <div class="cmp" (click)="toggleCompose()">
+        <i class="fa-solid fa-pen"></i>
+           Compose 
+       </div>
+
+    </div>
+    <div class="compose" [class.show]="isComposeVisible">
+
+        <h2>Compose Email</h2>
+        <form (ngSubmit)="OnSubmit()">
+            <div class="form-group">
+              <label for="title" class="form-label">To:</label>
+              <input type="text" [(ngModel)]="title" class="form-control" name="title" id="title" aria-describedby="emailHelp">
+            </div>
+            <div class=" mb-2 form-group">
+              <label for="desc" class="form-label">Description</label>
+              <input type="text" [(ngModel)]="desc" class="form-control" name="desc" id="desc">
+            </div>
+            <button type="submit" class="btn btn-sm btn-primary">Send Mail</button>
+          </form>
+      </div>
+    <div class="second" [class.second1]="isComposeVisible">
+        
+        <div class="mt-2 active">
+            <a href="#" class="list-group-item d-inline-block " data-parent="#sidebar">
+                <i class="far fa-inbox" aria-hidden="false"></i>
+                <span class=" d-mid inline">Inbox</span>
+            </a>
+        </div>
+        <div class="mt-2">
+            <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                <i class="far fa-heart" aria-hidden="false"></i>
+                <span class=" d-mid inline">Starred</span>
+            </a>
+        </div>
+        <div class="mt-2">
+            <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                <i class="far fa-clock-o" aria-hidden="false"></i>
+                <span class=" d-mid inline">Snoozed</span>
+            </a>
+        </div>
+        <div class="mt-2">
+                         
+            <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                <i class="far fa-paper-plane" aria-hidden="true"></i>
+                <span class=" d-mid inline">Sent</span>
+            </a>
+        </div>
+        <div class="mt-2">
+            <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                <i class="far fa-file-text-o" aria-hidden="true"></i>
+                <span class=" d-mid inline">Draft</span>
+            </a>
+        </div>
+        <div class="mt-2 ">
+      
+            <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                <i class="far fa-list" aria-hidden="true"></i>
+                <span class=" d-mid inline">Categories</span>
+            </a>
+        </div>
+        <div class="mt-2">
+          
+            <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                <i class="far fa-sticky-note" aria-hidden="false"></i>
+                <span class=" d-mid inline">Notes</span>
+            </a>  
+        </div>
+    </div>
+</div>
+
+
+
+               
+
+             

@@ -1,0 +1,50 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+.main{
+  display: flex;
+  flex-direction: row;
+  height: 8%;
+  background-color: aliceblue;
+}
+
+.first{
+  padding: 10px;
+  width: 20%;
+  /* background-color: aqua; */
+  font-size: 20px;
+}
+
+.second{
+  width: 50%;
+  /* background-color: black; */
+  padding: 5px;
+}
+
+.third{
+  width: 30%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: right;
+  padding: 20px;
+}
+.third i{
+  margin: 10px;
+  font-size: 25px;
+}
+
+.second-main{
+  display: flex;
+  flex-direction: row;
+  height: 92%;
+}
+
+.leftside{
+  background-color: aliceblue;
+  width: 18%;
+}
+
+.rightside{
+  /* margin-top: 50px; */
+  background-color: white;
+  width: 82%;
+}

@@ -1,0 +1,48 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+.main{
+    display: flex;
+    flex-direction: column;
+         /* Set the maximum height before a scrollbar appears */
+        overflow-y: auto; /* Enable vertical scrollbar when content overflows */
+      
+
+}
+
+.top-nav{
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+  padding-top: 30px;
+  height: 5%;
+  padding-left: 10px;
+}
+
+.top-nav i{
+  cursor: pointer;
+}
+
+
+.first{
+    height: 10%;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.hello{
+    display: flex;
+    flex-direction: column;
+}
+
+.second{
+    height: 85%;
+    width: 97%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.third{
+    width: 5%;
+}

@@ -1,0 +1,17 @@
+<div class="main">
+    <div class="icons">
+      <input type="checkbox">
+      <i class="far fa-star" aria-hidden="true"></i>
+    </div>
+    <div class="second">
+        <div class="title">{{item.title}}</div>&nbsp;&nbsp;
+        <div class="desc" style="margin-left: 0px;">{{item.desc}}</div>
+      </div>
+    <div class="third">
+      <i  (click)="onClick(item)" class="fas fa-trash"></i>
+      <i class="fa-regular fa-inbox-in"></i>
+      <i class="fa-regular fa-envelope" style="margin-left: -20px;"></i>
+      <i class="fa-regular  fa-clock"></i>
+    </div>  
+</div>
+<hr style="color:rgb(244, 217, 168);">
